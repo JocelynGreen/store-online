@@ -7,3 +7,5 @@
 {"body":{},"ip":"::1","level":"info","message":"[2025-05-13T08:41:57.037Z] GET /users/profile","params":{},"query":{},"timestamp":"2025-05-13T08:41:57.037Z"}
 {"body":{"email":"Joce@gmail.com","name":"Joce","password":"holahola"},"ip":"::1","level":"info","message":"[2025-05-13T09:58:43.941Z] POST /users/register","params":{},"query":{},"timestamp":"2025-05-13T09:58:43.942Z"}
 {"body":{},"ip":"::1","level":"info","message":"[2025-05-13T10:12:34.024Z] GET /products","params":{},"query":{},"timestamp":"2025-05-13T10:12:34.025Z"}
+{"body":{"email":"Joce@gmail.com","password":"holahola"},"ip":"::1","level":"info","message":"[2025-05-13T10:43:40.738Z] POST /users/login","params":{},"query":{},"timestamp":"2025-05-13T10:43:40.740Z"}
+{"body":{},"ip":"::1","level":"info","message":"[2025-05-13T10:43:42.441Z] GET /products","params":{},"query":{},"timestamp":"2025-05-13T10:43:42.442Z"}
