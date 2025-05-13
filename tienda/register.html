@@ -5,100 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TiendaOnline</title>
+    <title>Registro - TiendaOnline</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <style>
+        /* Añade estilos básicos para el formulario si style.css no los cubre */
+        .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: calc(100% - 20px); /* Ajusta el ancho para padding */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .message-area {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .message-area.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .message-area.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
 
-
     <div class="img-fondo">
-
         <div class="velo-negro">
 
             <header class="header">
                 <a href="index.html" class="cajaImagen">
-
                     <img src="./IMG/logo.png" alt="logo" class="logo-img">
                 </a>
-
-
             </header>
+
             <nav>
                 <ul class="menu_desple">
-
-
                     <li><a href="index.html"> Tienda </a></li>
                     <li><a href="catalogo.html">Catalogo</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
-                    <li><a href="register.html">Registro</a></li> <li><a href="login.html">Login</a></li>       </ul>
+                    <li><a href="login.html">Login</a></li> 
+                </ul>
             </nav>
+
             <main class="contenedor">
-                <h1 class="nustros-productos">Bienvenido</h1>
+                <h1 class="nustros-productos">Registro de Usuario</h1>
 
-                <div class="segundoEspacio">
-
-                    <div class="clase1">
-                        <div class="texto1">
-                            <h1>Bienvenidos</h1>
+                <div class="form-container">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
-                        <div class="texto2">
-                            <h5>Inicia Sesión</h5>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
-                        <div class="btn_acomodo">
-                            <a href="login.html" class="btn btn-warning btn-lg btn-block" 
-                               style="text-decoration: none; display: block; text-align: center; 
-                                      padding: 10px; border-radius: 5px; background-color: #ffc107; 
-                                      color: #212529; font-weight: bold;">Iniciar Sesión</a>
+                        <div class="form-group">
+                            <label for="password">Contraseña:</label>
+                            <input type="password" id="password" name="password" required>
                         </div>
+                        <div class="form-group">
+                            <button type="submit">Registrarse</button>
                         </div>
-                    <div class="clase2">
-                        <div class="l2_titulo">
-                            <h1>Categorias</h1>
-                        </div>
-                        <div class="l2_acomodo">
-                            <a href="catalogo.html"><img src="IMG/ropahombre.jpg" class="imgRedonda" style="width:110px;height:100px;"></a>
-                            <h4>Hombres</h4>
-                        </div>
-                        <div class="l2_acomodo2">
-                            <a href="catalogo.html"> <img src="IMG/ropamujer.jpg" class="imgRedonda" style="width:110px;height:100px;"></a>
-                            <h4>Mujeres</h4>
-                        </div>
-                        <div class="l2_acomodo3">
-                            <a href="catalogo.html"><img src="IMG/ropanino.jpg" class="imgRedonda" style="width:110px;height:100px;"></a>
-                            <h4>Niños</h4>
-                        </div>
-                        <div class="l2_acomodo4">
-                            <a href="catalogo.html"><img src="IMG/ropanina.jpg" class="imgRedonda" style="width:110px;height:100px;"></a>
-                            <h4>Niñas</h4>
-
-                        </div>
+                    </form>
+                    <div id="messageArea" class="message-area" style="display: none;"></div>
+                    <div class="login-link">
+                        ¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a>
                     </div>
-                    <div class="clase3">
-                        <div class="l3_texto">
-                            <h2>Zapatos</h2>
-                        </div>
-                        <div class="l3_acomodo">
-                            <a href="catalogo.html"><img src="IMG/teniscatalogo.jpg" style="width:210px;height:300px;border-radius: 25px;"></a>
-                        </div>
-                    </div>
-                    <div class="clase4">
-                        <div class="l4_texto">
-                            <h2>Accesorios</h2>
-                        </div>
-                        <div class="l4_acomodo">
-                            <a href="catalogo.html"><img src="IMG/accesorioscatalogo.jpg" style="width:250px;height:300px;border-radius: 5px;"></a>
-                        </div>
-                    </div>
-
                 </div>
 
             </main>
-            </div>
 
-
+        </div>
     </div>
-
 
     <footer class="footer">
         <a class="enlace-footer" href="https://es-la.facebook.com/" target="_blank">
@@ -111,7 +142,6 @@
                 </g>
             </svg>
         </a>
-
         <a class="enlace-footer" href="https://www.instagram.com/" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 172 172" style="fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -136,7 +166,53 @@
         <p>Copyright© 2022-Todos los derechos reservados TiendaONLINE</p>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const registerForm = document.getElementById('registerForm');
+            const messageArea = document.getElementById('messageArea');
 
+            if (registerForm) {
+                registerForm.addEventListener('submit', async (event) => {
+                    event.preventDefault(); // Previene el envío por defecto del formulario
+
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const password = document.getElementById('password').value;
+
+                    try {
+                        const response = await fetch('http://localhost:3000/users/register', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ name, email, password })
+                        });
+
+                        const result = await response.json();
+
+                        messageArea.style.display = 'block';
+                        if (response.ok && result.success) {
+                            messageArea.className = 'message-area success';
+                            messageArea.textContent = result.message + '. Redirigiendo a login...';
+                            setTimeout(() => {
+                                window.location.href = 'login.html';
+                            }, 2000);
+                        } else {
+                            messageArea.className = 'message-area error';
+                            messageArea.textContent = result.message || 'Error en el registro. Inténtalo de nuevo.';
+                            if (result.errors && typeof result.errors === 'string') {
+                                messageArea.textContent += ` Detalle: ${result.errors}`;
+                            }
+                        }
+                    } catch (error) {
+                        console.error('Error de red o del servidor:', error);
+                        messageArea.className = 'message-area error';
+                        messageArea.textContent = 'Error de conexión. Verifica que el servidor de la API esté en funcionamiento.';
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 
 </html>

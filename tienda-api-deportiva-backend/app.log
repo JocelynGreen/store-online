@@ -1,3 +1,9 @@
 {"body":{},"ip":"::1","level":"info","message":"[2025-05-13T05:50:36.447Z] GET /products","params":{},"query":{},"timestamp":"2025-05-13T05:50:36.450Z"}
 {"body":{},"ip":"::1","level":"info","message":"[2025-05-13T05:50:45.911Z] GET /products","params":{},"query":{},"timestamp":"2025-05-13T05:50:45.911Z"}
 {"body":{},"ip":"::1","level":"info","message":"[2025-05-13T05:50:51.861Z] GET /products","params":{},"query":{},"timestamp":"2025-05-13T05:50:51.862Z"}
+{"body":{"email":"yarely@ejemplo.com","name":"Yarely Hernandez","password":"holis"},"ip":"::1","level":"info","message":"[2025-05-13T08:36:53.830Z] POST /users/register","params":{},"query":{},"timestamp":"2025-05-13T08:36:53.834Z"}
+{"body":{"email":"yarely@ejemplo.com","name":"Yarely Hernandez","password":"holis"},"ip":"::1","level":"info","message":"[2025-05-13T08:38:33.670Z] GET /users/profile","params":{},"query":{},"timestamp":"2025-05-13T08:38:33.670Z"}
+{"body":{},"ip":"::1","level":"info","message":"[2025-05-13T08:39:07.568Z] GET /users/profile","params":{},"query":{},"timestamp":"2025-05-13T08:39:07.568Z"}
+{"body":{},"ip":"::1","level":"info","message":"[2025-05-13T08:41:57.037Z] GET /users/profile","params":{},"query":{},"timestamp":"2025-05-13T08:41:57.037Z"}
+{"body":{"email":"Joce@gmail.com","name":"Joce","password":"holahola"},"ip":"::1","level":"info","message":"[2025-05-13T09:58:43.941Z] POST /users/register","params":{},"query":{},"timestamp":"2025-05-13T09:58:43.942Z"}
+{"body":{},"ip":"::1","level":"info","message":"[2025-05-13T10:12:34.024Z] GET /products","params":{},"query":{},"timestamp":"2025-05-13T10:12:34.025Z"}
