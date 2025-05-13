@@ -1,0 +1,11 @@
+# Ignorar node_modules de ambos proyectos
+tienda/node_modules/
+tienda-api-deportiva-backend/node_modules/
+
+# Ignorar archivos de base de datos SQLite
+tienda-api-deportiva-backend/*.db
+tienda-api-deportiva-backend/data/
+
+# Ignorar variables de entorno sensibles
+tienda-api-deportiva-backend/.env
+tienda-api-deportiva-backend/.env.local
