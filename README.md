@@ -2,10 +2,9 @@
 # Tienda Deportiva
 
 # INTEGRANTES: 
-HERNANDEZ RAMIREZ YARELY JOCELYN
-RODRIGUEZ HUMBERTO FELIPE
+- HERNANDEZ RAMIREZ YARELY JOCELYN
+- RODRIGUEZ HUMBERTO FELIPE
 
-Este proyecto consiste en una aplicación web completa que simula una tienda deportiva, con funcionalidades tanto de frontend como de backend. El sistema permite a los usuarios explorar productos, registrarse, iniciar sesión y gestionar un carrito de compras básico.
 
 ## Estructura del Repositorio
 
